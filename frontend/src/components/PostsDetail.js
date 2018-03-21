@@ -84,10 +84,10 @@ class PostsDetail extends Component {
                             <Col md={4} className="text-right">
                                 <h3><Label bsStyle={post.voteScore < 0 ? "danger": "success"}>{post.voteScore}</Label></h3>
                                 <Button onClick={() => voteForPost(post.id, 'upVote')}>
-                                    <Glyphicon glyph="thumbs-up" />
+                                    <Glyphicon glyph="plus" />
                                 </Button>
                                 <Button onClick={() => voteForPost(post.id, 'downVote')}>
-                                    <Glyphicon glyph="thumbs-down" />
+                                    <Glyphicon glyph="minus" />
                                 </Button>
                             </Col>
                         </Col>
